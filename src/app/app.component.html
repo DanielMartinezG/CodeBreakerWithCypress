@@ -1,0 +1,17 @@
+<header>
+  <h2>Code Breaker</h2>
+</header>
+<div>
+  <div class="card-container">
+    <p>Set secret number:</p>
+    <input id="text1" type="text" #secretNumber>
+    <button id="button1" (click)= "setSecret(secretNumber.value)">Set Up</button>
+    <p>{{startMessage}}</p>
+  </div>
+  <div class="card-container">
+    <p>Guess:</p>
+    <input id="text2" type="text" #guessNumber>
+    <button id="button2" (click)= "guess(guessNumber.value)">Guess</button>
+    <p>{{resultMessage}}</p>
+  </div>
+</div>
